@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+:root{
+  --primary:#2563EB;
+  --secondary:#F59E0B;
+  --success:#16A34A;
+  --error:#EF4444;
+
+  --bg:#f9fafb;
+  --surface:#ffffff;
+  --text:#111827;
+  --muted:#6B7280;
+  --border:#E5E7EB;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.06);
+  --shadow-md: 0 10px 20px rgba(17,24,39,.08);
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+
+  --sidebar-w: 280px;
+  --header-h: 64px;
+
+  --font: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+
+body{
+  margin:0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{ color: inherit; text-decoration:none; }
+button, input, select, textarea { font: inherit; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+::selection{
+  background: rgba(37,99,235,.18);
 }
